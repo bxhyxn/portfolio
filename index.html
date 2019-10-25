@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="./style.css">
+    <title>BOHYUN KWON</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="title">
+            <h1>BOHYUN<br>KWON</h1>
+            <h2>/ DESIGN PORTFOLIO</h2>
+        </div>
+        <div class="contents-wrapper">
+            <div class="contents">
+                <div class="content">
+                    <a href="#resume" class="modal_btn">
+                        <div class="thumb">
+                            <img src="../img/aboutme.jpeg" alt="">
+                        </div>
+                        <div class="info">
+                            <h5>RESUME</h5>
+                            <p>About me<br>next<br>text</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">
+                                <div class="icon ai">AI</div>
+                                <div class="icon ps">PS</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="#">
+                        <div class="thumb">img</div>
+                        <div class="info">
+                            <h5>title</h5>
+                            <p>details</p>
+                            <div class="tools">ICON</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resume" class="modal">
+        <div class="modal_wrapper">
+            <div class="title title_modal">
+                <h1>RESUME</h1>
+                <h2>/ DESIGN PORTFOLIO</h2>
+                <div class="tools_modal">
+                    <div class="icon ai">AI</div>
+                    <div class="icon ps">PS</div>
+                </div>
+                <a class="view_btn" href="#"> + VIEW DETAILS</a>
+            </div>
+            <div class="contents_modal">
+                right
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script>
+    $('a[href="#resume"]').click(function(event) {
+      event.preventDefault();
+      $(this).modal({
+        fadeDuration: 250
+      });
+    });
+    </script>
+</body>
+</html>
