@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <link href="css/pagecrossfade.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <title>BOHYUN KWON</title>
 </head>
@@ -12,7 +11,7 @@
         <div class="title">
             <h1>BOHYUN<br>KWON</h1>
             <h2>/ DESIGN PORTFOLIO</h2>
-            <a href="#" class="view_btn">519039@gmail.com</a>
+            <a href="mailto:519039@gmail.com" target="_top"  class="view_btn">권보현 | 디자인 포트폴리오</a>
         </div>
         <div class="contents">
             <div class="contents-inner lists">
@@ -27,7 +26,7 @@
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="web-muji.html" class="list-item-link"></a>
+                    <a href="muji.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/muji.png" alt="muji_thumb">
                     </div>
@@ -37,17 +36,17 @@
                         <div class="icons">
                             <span class="icon ps">PS</span>
                             <span class="icon html">HTML</span>
-                            <span class="icon jq">JS</span>
+                            <span class="icon jq">JQ</span>
                         </div>
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="video-sns" class="list-item-link"></a>
+                    <a href="viral.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/viral.png" alt="viral_thumb">
                     </div>
                     <div class="info">
-                        <h4>SNS 영상</h4>
+                        <h4>SNS 광고 영상</h4>
                         <span class="list-details">바이럴 마케팅 영상</span>
                         <div class="icons">
                             <span class="icon ps">PS</span>
@@ -57,7 +56,7 @@
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="#" class="list-item-link"></a>
+                    <a href="starbucks.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/starbucks.png" alt="starbucks_thumb">
                     </div>
@@ -70,9 +69,9 @@
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="img/carin.png" alt="carin_thumb"></a>
+                    <a href="carin.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="#" alt="">
+                        <img src="img/carin.png" alt="carin_thumb">
                     </div>
                     <div class="info">
                         <h4>Carin</h4>
@@ -83,23 +82,22 @@
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="#" class="list-item-link"></a>
+                    <a href="muff.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="#" alt="">
+                        <img src="img/muff.png" alt="muff_thumb">
                     </div>
                     <div class="info">
                         <h4>MUFF</h4>
                         <span class="list-details">행사 오프닝 영상</span>
                         <div class="icons">
-                            <span class="icon ai">AI</span>
                             <span class="icon ae">AE</span>
                         </div>
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="#" class="list-item-link"></a>
+                    <a href="jenah.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="#" alt="">
+                        <img src="img/jenah.png" alt="jenah-thumb">
                     </div>
                     <div class="info">
                         <h4>Jenah</h4>
@@ -110,13 +108,13 @@
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="#" class="list-item-link"></a>
+                    <a href="scandal.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="#" alt="">
+                        <img src="img/scandal.png" alt="scandal-thumb">
                     </div>
                     <div class="info">
                         <h4>SCANDAL</h4>
-                        <span class="list-details">details</span>
+                        <span class="list-details">드로잉, 웹 배너</span>
                         <div class="icons">
                             <span class="icon ai">AI</span>
                             <span class="icon ps">PS</span>
@@ -124,33 +122,25 @@
                     </div>
                 </div>
                 <div class="list-item">
-                    <a href="#" class="list-item-link"></a>
+                    <a href="su.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="#" alt="">
+                        <img src="img/su.png" alt="su-thumb">
                     </div>
                     <div class="info">
                         <h4>See the Unseen</h4>
-                        <span class="list-details">details</span>
+                        <span class="list-details">정보 제공 영상</span>
                         <div class="icons">
-                            <span class="icon ai">AI</span>
-                            <span class="icon ps">PS</span>
+                            <span class="icon ae">AE</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
-<!--        <a href="1026-index.html" class="close_btn"></a>-->
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="scripts/pagecrossfade.js"></script>
     <script>
-    $(function() {
-      $('body').pageCrossFade({
-        duration: 400, 
-        easing: 'swing',
-        links: 'internal'
-      });
-    });
+    $('body').css('display', 'none').fadeIn(500);
     </script>
 </body>
 </html>

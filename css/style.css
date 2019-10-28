@@ -11,25 +11,23 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
 input,select,textarea,button {vertical-align:middle}
 input::-ms-clear {display:none}
 button {border:0;background-color:transparent;cursor:pointer}
-body {background:#f5f5f5; overflow: hidden;}
+body {background:#f5f5f5; overflow-y: hidden;}
 body,th,td,input,select,textarea,button {font-size:12px; line-height:1.6; font-family:'Roboto Condensed', 'NotoSans', sans-serif; color:#666;}
 height: ;
 h1,h2,h5 {color:#444; letter-spacing: 0.3px;}
 a {text-decoration:none; color:#666;}
 img {width:100%;}
-hr{height: 30px; border:none;}
-.spacebar { padding: 0 4px;}
-
-body {
-    background-color:#f9f9f9;    
-}
+hr{height: 25px; border:none;}
+.spacebar {padding: 0 4px;}
+.italic {font-style: italic; text-decoration: underline;}
+iframe {margin: 5px 0;}
 
 #wrapper {
     display:flex;
     position: relative;
     width:1000px;
     height:500px;
-    margin:100px auto;
+    margin:10% auto;
     background-color:#fff;
 }
         
@@ -41,12 +39,6 @@ body {
 }
 
 
-#wrapper .title p.title-details {
-    width:187.5px;
-    margin: 13px 0 10px;
-    font-size: 10px;
-    color:#888;
-}
 
 
 #wrapper .title h1{
@@ -61,9 +53,17 @@ body {
     font-weight: 300;
 }
 
+#wrapper .title p.title-details {
+    width:187.5px;
+    margin: 13px 0 10px;
+    font-size: 11px;
+    line-height: 1.5;
+    color:#888;
+}
+
 #wrapper .title .view_btn {
     position: absolute;
-    bottom:31.25px;
+    bottom:31.25px; left:31.25px;
     font-size: 11px;
     transition: color 0.3s ease;
 }
@@ -87,6 +87,14 @@ body {
     margin-bottom: 3px;
 }
 
+#wrapper .contents h7{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
 #wrapper .close_btn {
     position:absolute;
     top:12px;
@@ -96,13 +104,13 @@ body {
     height:10px;
     background-image: url('../img/close.svg');
 }
-
 .icon {
     padding:0 2px;
     display:inline-block;
     min-width:13px; height:13px;
     border-radius:13px;
     font-size: 8px;
+    font-weight: 300;
     color:#fff;
     line-height: 13px;
     text-align: center;
@@ -149,8 +157,8 @@ body {
 }
 
 .list-item .thumb img{
-    filter: grayscale(90%);
-    -webkit-filter: grayscale(90%);
+    filter: grayscale(95%);
+    -webkit-filter: grayscale(95%);
     transition: transform .5s ease;
 }
 
@@ -178,7 +186,7 @@ body {
 }
 
 .list-item .info .list-details {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
     color:#777;
 }
@@ -188,8 +196,8 @@ body {
     bottom:0;
 }
 
-.list-item .icon {opacity:0.4; transition: opacity 0.5s ease;}
-.list-item:hover .icon {opacity: 0.8;}
+.list-item .icons {opacity:0.4; transition: all 0.5s ease;}
+.list-item:hover .icons {opacity:0.9; padding-left: 1px;}
 
 
 /* RESUME */
@@ -239,7 +247,7 @@ body {
 .bar::before, .bar::after {
     content:'';
     position: absolute;
-    top:7px;
+    top:8px;
     left:-190px;
     width:170px;
     height:3px;
@@ -301,9 +309,77 @@ body {
     border:1px solid #666;
     background-color: #666;
 }
+.bar.next::before{
+    border:1px solid #da634c;
+}
+.resume_text {
+    margin: 5px 0;
+    text-indent: 5px;
+}
+.color {
+    color:#da634c;
+}
 
 
+/* MUJI */
+.more_btn {
+    display:block;
+    margin: 30px auto 0;
+    width:90px; height:20px;
+    color:#444;
+    text-align: center;
+    line-height: 20px;
+    border:1px solid #444;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.preview-img {
+    width:623px; height:373px; overflow: hidden;
+}
+.preview-img img{
+    transition: all .5s ease;
+}
+.preview-img:hover img {
+    transform: scale(1.1)
+}
+.more_btn:hover{
+    background-color: #444;
+    color:#fff;
+}
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cont-l {
+    width:40%;
+    padding-top: 200px;
+    text-align: center;
+}
+.cont-r {
+    width:60%;
+}
+
+.cont-l img{
+/*    margin-top: 50px;*/
+}
+
+
+/*SNS*/
+#wrapper .viral {
+    overflow: hidden;
+}
+.cont-col {
+    flex-direction: column;
+}
+.cont-30 {
+    width:30%;
+}
+
+.viral .more_btn {
+    margin-top: 20px !important;
+}
 
 
 /* 스크롤바 설정 */
