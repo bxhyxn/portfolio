@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/style.css">
-    <title>BOHYUN KWON</title>
+    <title>BOHYUN KWON - TEST</title>
 </head>
 <body>
     <div id="wrapper">
@@ -14,6 +14,15 @@
             <a href="mailto:519039@gmail.com" target="_top"  class="view_btn">권보현 | 디자인 포트폴리오</a>
         </div>
         <div class="contents">
+           <div class="cate">
+<!--                <span class="active icon all">ALL</span>-->
+                <span class="icon ps">PS</span>
+                <span class="icon ai">AI</span>
+                <span class="icon pr">PR</span>
+                <span class="icon ae">AE</span>
+                <span class="icon html">HTML</span>
+                <span class="icon jq">JQ</span>
+            </div>
             <div class="contents-inner lists">
                 <div class="list-item">
                     <a href="resume.html" class="list-item-link"></a>
@@ -25,7 +34,7 @@
                         <span class="list-details">About ME!</span>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item muji">
                     <a href="muji.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/muji.png" alt="muji_thumb">
@@ -40,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item viral">
                     <a href="viral.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/viral.png" alt="viral_thumb">
@@ -55,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item starbucks">
                     <a href="starbucks.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/starbucks.png" alt="starbucks_thumb">
@@ -68,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item carin">
                     <a href="carin.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/carin.png" alt="carin_thumb">
@@ -81,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item muff">
                     <a href="muff.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/muff.png" alt="muff_thumb">
@@ -94,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item jenah">
                     <a href="jenah.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/jenah.png" alt="jenah-thumb">
@@ -107,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item scandal">
                     <a href="scandal.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/scandal.png" alt="scandal-thumb">
@@ -116,12 +125,11 @@
                         <h4>SCANDAL</h4>
                         <span class="list-details">드로잉, 웹 배너</span>
                         <div class="icons">
-                            <span class="icon ai">AI</span>
                             <span class="icon ps">PS</span>
                         </div>
                     </div>
                 </div>
-                <div class="list-item">
+                <div class="list-item su">
                     <a href="su.html" class="list-item-link"></a>
                     <div class="thumb">
                         <img src="img/su.png" alt="su-thumb">
@@ -141,6 +149,49 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
     $('body').css('display', 'none').fadeIn(500);
+        
+    $('.cate .html').click(function(){
+        if($('.cate .html').hasClass('active') === true) {
+           $('.cate .html, .list-item.muji').removeClass('active')
+        } else {
+           $('.cate .html, .list-item.muji').addClass('active')
+           }
+    });
+    $('.cate .jq').click(function(){
+        if($('.cate .jq').hasClass('active') === true) {
+           $('.cate .jq, .list-item.muji').removeClass('active')
+        } else {
+           $('.cate .jq, .list-item.muji').addClass('active')
+           }
+    });
+    $('.cate .ps').click(function(){
+        if($('.cate .ps').hasClass('active') === true) {
+           $('.cate .ps, .list-item.muji, .list-item.viral, .list-item.starbucks, .list-item.carin, .list-item.scandal').removeClass('active')
+        } else {
+           $('.cate .ps, .list-item.muji, .list-item.viral, .list-item.starbucks, .list-item.carin, .list-item.scandal').addClass('active')
+           }
+    });
+    $('.cate .ai').click(function(){
+        if($('.cate .ai').hasClass('active') === true) {
+           $('.cate .ai, .list-item.jenah').removeClass('active')
+        } else {
+           $('.cate .ai, .list-item.jenah').addClass('active')
+       }
+    });
+    $('.cate .pr').click(function(){
+        if($('.cate .pr').hasClass('active') === true) {
+           $('.cate .pr, .list-item.viral').removeClass('active')
+        } else {
+           $('.cate .pr, .list-item.viral').addClass('active')
+       }
+    });
+    $('.cate .ae').click(function(){
+        if($('.cate .ae').hasClass('active') === true) {
+           $('.cate .ae, .list-item.viral, .list-item.muff, .list-item.su').removeClass('active')
+        } else {
+           $('.cate .ae, .list-item.viral, .list-item.muff, .list-item.su').addClass('active')
+       }
+    });
     </script>
 </body>
 </html>
