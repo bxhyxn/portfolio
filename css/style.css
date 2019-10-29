@@ -160,7 +160,6 @@ iframe {margin: 5px 0;}
     width:93.75px; height:93.75px;
     margin-right: 5px;
     overflow: hidden;
-    background-color: salmon;
 }
 .list-item .thumb img{
     filter: grayscale(95%);
