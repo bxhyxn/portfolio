@@ -17,23 +17,21 @@ height: ;
 h1,h2,h5 {color:#444; letter-spacing: 0.3px;}
 a {text-decoration:none; color:#666;}
 img {width:100%;}
-hr{height: 15px; border:none;}
+hr{height: 25px; border:none;}
 iframe {margin: 5px 0;}
 
 /* 전체 */
 #wrapper {
     display:flex;
-    position: relative;
-    width:1000px;
-    height:500px;
+    position:relative;
+    width:1000px; height:500px;
     margin:10% auto;
-    background-color:#fff;
-}
+    background-color:#fff;}
 
 .icon {
-    padding:0 2px;
     display:inline-block;
     min-width:13px; height:13px;
+    padding:0 2px;
     border-radius:13px;
     font-size: 8px;
     font-weight: 300;
@@ -62,10 +60,10 @@ iframe {margin: 5px 0;}
     line-height: 1.2;
 }
 .title h1{
+    margin-bottom: 3px;
     font-size: 31.25px;
     font-weight: 600;
     color:#444;
-    margin-bottom: 3px;
 }
 .title h2{
     font-size: 12.5px;
@@ -99,102 +97,102 @@ iframe {margin: 5px 0;}
 }
 
 .contents h5{
-    font-size: 12px;
     margin-bottom: 3px;
+    font-size: 12px;
 }
 
 .contents h7{
     display: block;
-    font-size: 12px;
-    text-align: center;
     margin-top: 5px;
     margin-bottom: 3px;
+    font-size: 12px;
+    text-align: center;
 }
 
 .close_btn {
-    position:absolute;
-    top:12px;
-    right:13px;
     display:block;
     width:10px;
     height:10px;
+    position:absolute;
+    top:12px;
+    right:13px;
     background-image: url('../img/close.svg');
 }
 
 
 /* 컨텐츠 - 인덱스 */
 
-.cate {
+.INDEX .cate {
     position: absolute;
     top:31.25px; right:31.25px;    
 }
-.cate .icon{
+.INDEX .cate .icon{
     opacity: 0.4;
     cursor: pointer;
 }
-.cate .icon.active{
+.INDEX .cate .icon.active{
     opacity:0.8;
 }
-.lists {
+.INDEX .lists {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: absolute;
     bottom:31.25px;
 }
-.list-item {
+.INDEX .list-item {
     display: flex;
     width: 187.5px;
     height:93.75px;
     margin-top: 31.25px;
     position: relative;
 }
-.list-item .list-item-link {
+.INDEX .list-item .list-item-link {
     display: block;
     position: absolute;
     top:0; left:0; right:0; bottom:0;
     z-index: 1;
 }
-.list-item .thumb {
+.INDEX .list-item .thumb {
     display: block;
     width:93.75px; height:93.75px;
     margin-right: 5px;
     overflow: hidden;
 }
-.list-item .thumb img{
+.INDEX .list-item .thumb img{
     filter: grayscale(95%);
     -webkit-filter: grayscale(95%);
     transition: transform .5s ease;
 }
-.list-item:hover .thumb img, .list-item.active .thumb img{
+.INDEX .list-item:hover .thumb img, .list-item.active .thumb img{
     filter: none;
     transform: scale(1.2);
 }
-.list-item .info {
+.INDEX .list-item .info {
     transition: padding .5s ease;
 }
-.list-item:hover .info, .list-item.active .info{
+.INDEX .list-item:hover .info, .list-item.active .info{
     padding-left: 4px;
 }
-.list-item .info h4{
-    font-size: 13px;
+.INDEX .list-item .info h4{
     margin-bottom: -5px;
+    font-size: 13px;
     transition: color .5s ease;
 }
-.list-item:hover .info h4, .list-item.active .info h4{
+.INDEX .list-item:hover .info h4, .list-item.active .info h4{
     color:#da634c;
 }
-.list-item .info .list-details {
+.INDEX .list-item .info .list-details {
     font-size: 11px;
     font-weight: 400;
     color:#777;
 }
-.list-item .icons {
+.INDEX .list-item .icons {
     position: absolute;   
     bottom:0;
 }
-.list-item .icons {opacity:0.4; transition: all 0.5s ease;}
-.list-item:hover .icons, .list-item.active .icons  {opacity:0.9; padding-left: 1px;}
+.INDEX .list-item .icons {opacity:0.4; transition: all 0.5s ease;}
+.INDEX .list-item:hover .icons, .list-item.active .icons  {opacity:0.9; padding-left: 1px;}
 
 
 /* 컨텐츠 - RESUME */
@@ -206,10 +204,10 @@ iframe {margin: 5px 0;}
 .profile .prof_pic {
     width:200px;
     height:110px;
-    background-position: center;
-    background-image: url('../img/aboutme.png');
     margin-left: -31.25px;
     margin-bottom: 10px;
+    background-position: center;
+    background-image: url('../img/aboutme.png');
 }
 .profile p{
     margin: 3px 0;
@@ -228,9 +226,9 @@ iframe {margin: 5px 0;}
 
 .resume_r {
     width:50%;
+    padding-right: 15.625px;
     overflow-y: scroll;
     text-align: justify;
-    padding-right: 15.625px;
 }
 .bar {
     width:70px;
@@ -240,12 +238,11 @@ iframe {margin: 5px 0;}
     position: relative;
 }
 .bar::before, .bar::after {
-    content:'';
+    width:170px;
+    height:3px;content:'';
     position: absolute;
     top:8px;
     left:-190px;
-    width:170px;
-    height:3px;
 }
 .bar.ai::before {
     border:1px solid #f47954;
@@ -315,22 +312,23 @@ iframe {margin: 5px 0;}
 /* 컨텐츠 - 상세 */
 .more_btn {
     display:block;
-    margin: 30px auto 0;
     width:90px; height:20px;
+    margin: 30px auto 0;
+    border:1px solid #444;
+    border-radius: 15px;
     color:#444;
     text-align: center;
     line-height: 20px;
-    border:1px solid #444;
-    border-radius: 15px;
     transition: all 0.5s ease;
 }
-.preview-img {
-    width:623px; height:373px; overflow: hidden;
+.scale-img {
+    display: block;
+    overflow: hidden;
 }
-.preview-img img{
+.scale-img img{
     transition: all .5s ease;
 }
-.preview-img:hover img {
+.scale-img:hover img {
     transform: scale(1.1)
 }
 .more_btn:hover{
@@ -338,35 +336,49 @@ iframe {margin: 5px 0;}
     color:#fff;
 }
 
-/* 컨텐츠 상세 - MUJI */
-.container{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.cont-l {
-    width:40%;
-    padding-top: 200px;
-    text-align: center;
-}
-.cont-r {
-    width:60%;
+
+/* 컨텐츠 상세 - JENAH */
+.JENAH .jenah-mu {
+    width:623px;
 }
 
-/* 컨텐츠 상세 - SNS*/
-#wrapper .viral {
-    overflow: hidden;
+/* 컨텐츠 상세 - VIRAL */
+.VIRAL .container{
+    display: flex;
 }
-.cont-col {
+.VIRAL .cont-50 {
+    width:50%;
+}
+.VIRAL .contents hr{
+    height:15px;
+}
+.VIRAL .viral_youtube {
+    width:100%; height:250px;
+}
+
+
+/* 컨텐츠 상세 - SCANDAL */
+.SCANDAL .contents {
+    position: relative;
+    overflow: visible;
+    
+}
+.SCANDAL .container {
+    width:296px;
     flex-direction: column;
 }
-.cont-30 {
-    width:30%;
+.SCANDAL .sc-img {
+    display: block;
 }
-.viral .more_btn {
-    margin-top: 20px !important;
+.SCANDAL .sc-img.dr {
+    padding: 20px;
+    margin: 20px 0;
 }
-
+.SCANDAL .sc-img.poster {
+    width:308px; height:438px;
+    position: absolute;
+    top:0; right:15.625px;
+}
 
 /* 스크롤바 설정 */
 ::-webkit-scrollbar {width: 1px; height:0px;}
