@@ -11,6 +11,7 @@
             <h1>BOHYUN<br>KWON</h1>
             <h2>/ DESIGN PORTFOLIO</h2>
             <a href="mailto:519039@gmail.com" target="_top"  class="view_btn">권보현 | 디자인 포트폴리오</a>
+            <a href="#">(pdf로 보기)</a>
         </div>
         <div class="contents">
            <div class="cate">
@@ -33,16 +34,18 @@
                         <span class="list-details">About ME!</span>
                     </div>
                 </div>
-                <div class="list-item jenah">
-                    <a href="jenah.html" class="list-item-link"></a>
+                <div class="list-item muji">
+                    <a href="muji.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="img/jenah.png" alt="jenah-thumb">
+                        <img src="img/muji.png" alt="muji_thumb">
                     </div>
                     <div class="info">
-                        <h4>Jenah</h4>
-                        <span class="list-details">개인 브랜딩</span>
+                        <h4>MUJI</h4>
+                        <span class="list-details">반응형 웹사이트</span>
                         <div class="icons">
-                            <span class="icon ai">AI</span>
+                            <span class="icon ps">PS</span>
+                            <span class="icon html">HTML</span>
+                            <span class="icon jq">jQ</span>
                         </div>
                     </div>
                 </div>
@@ -61,34 +64,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item muji">
-                    <a href="muji.html" class="list-item-link"></a>
-                    <div class="thumb">
-                        <img src="img/muji.png" alt="muji_thumb">
-                    </div>
-                    <div class="info">
-                        <h4>MUJI</h4>
-                        <span class="list-details">반응형 웹사이트</span>
-                        <div class="icons">
-                            <span class="icon ps">PS</span>
-                            <span class="icon html">HTML</span>
-                            <span class="icon jq">jQ</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="list-item carin">
-                    <a href="carin.html" class="list-item-link"></a>
-                    <div class="thumb">
-                        <img src="img/carin.png" alt="carin_thumb">
-                    </div>
-                    <div class="info">
-                        <h4>Carin</h4>
-                        <span class="list-details">프로모션 페이지</span>
-                        <div class="icons">
-                            <span class="icon ps">PS</span>
-                        </div>
-                    </div>
-                </div>
                 <div class="list-item starbucks">
                     <a href="starbucks.html" class="list-item-link"></a>
                     <div class="thumb">
@@ -102,14 +77,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-item scandal">
-                    <a href="scandal.html" class="list-item-link"></a>
+                <div class="list-item carin">
+                    <a href="carin.html" class="list-item-link"></a>
                     <div class="thumb">
-                        <img src="img/scandal.png" alt="scandal-thumb">
+                        <img src="img/carin.png" alt="carin_thumb">
                     </div>
                     <div class="info">
-                        <h4>SCANDAL</h4>
-                        <span class="list-details">드로잉, 웹 배너</span>
+                        <h4>Carin</h4>
+                        <span class="list-details">프로모션 페이지</span>
                         <div class="icons">
                             <span class="icon ps">PS</span>
                         </div>
@@ -128,6 +103,32 @@
                         </div>
                     </div>
                 </div>
+                <div class="list-item jenah">
+                    <a href="jenah.html" class="list-item-link"></a>
+                    <div class="thumb">
+                        <img src="img/jenah.png" alt="jenah-thumb">
+                    </div>
+                    <div class="info">
+                        <h4>Jenah</h4>
+                        <span class="list-details">개인 브랜딩</span>
+                        <div class="icons">
+                            <span class="icon ai">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item scandal">
+                    <a href="scandal.html" class="list-item-link"></a>
+                    <div class="thumb">
+                        <img src="img/scandal.png" alt="scandal-thumb">
+                    </div>
+                    <div class="info">
+                        <h4>SCANDAL</h4>
+                        <span class="list-details">드로잉, 웹 배너</span>
+                        <div class="icons">
+                            <span class="icon ps">PS</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="list-item su">
                     <a href="su.html" class="list-item-link"></a>
                     <div class="thumb">
@@ -142,7 +143,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -150,46 +150,22 @@
     $('body').css('display', 'none').fadeIn(500);
         
     $('.cate .html').click(function(){
-        if($('.cate .html').hasClass('active') === true) {
-           $('.cate .html, .list-item.muji').removeClass('active')
-        } else {
-           $('.cate .html, .list-item.muji').addClass('active')
-           }
+        $('cate .html, .list-item.muji').toggleClass('active');
     });
     $('.cate .jq').click(function(){
-        if($('.cate .jq').hasClass('active') === true) {
-           $('.cate .jq, .list-item.muji').removeClass('active')
-        } else {
-           $('.cate .jq, .list-item.muji').addClass('active')
-           }
+        $('.cate .jq, .list-item.muji').toggleClass('active')
     });
     $('.cate .ps').click(function(){
-        if($('.cate .ps').hasClass('active') === true) {
-           $('.cate .ps, .list-item.muji, .list-item.viral, .list-item.starbucks, .list-item.carin, .list-item.scandal').removeClass('active')
-        } else {
-           $('.cate .ps, .list-item.muji, .list-item.viral, .list-item.starbucks, .list-item.carin, .list-item.scandal').addClass('active')
-           }
+        $('.cate .ps, .list-item.muji, .list-item.viral, .list-item.starbucks, .list-item.carin, .list-item.scandal').toggleClass('active')
     });
     $('.cate .ai').click(function(){
-        if($('.cate .ai').hasClass('active') === true) {
-           $('.cate .ai, .list-item.jenah').removeClass('active')
-        } else {
-           $('.cate .ai, .list-item.jenah').addClass('active')
-       }
+        $('.cate .ai, .list-item.jenah').toggleClass('active')
     });
     $('.cate .pr').click(function(){
-        if($('.cate .pr').hasClass('active') === true) {
-           $('.cate .pr, .list-item.viral').removeClass('active')
-        } else {
-           $('.cate .pr, .list-item.viral').addClass('active')
-       }
+        $('.cate .pr, .list-item.viral').toggleClass('active')
     });
     $('.cate .ae').click(function(){
-        if($('.cate .ae').hasClass('active') === true) {
-           $('.cate .ae, .list-item.viral, .list-item.muff, .list-item.su').removeClass('active')
-        } else {
-           $('.cate .ae, .list-item.viral, .list-item.muff, .list-item.su').addClass('active')
-       }
+        $('.cate .ae, .list-item.viral, .list-item.muff, .list-item.su').toggleClass('active')
     });
     </script>
 </body>
